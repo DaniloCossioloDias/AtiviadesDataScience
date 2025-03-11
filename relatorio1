@@ -1,0 +1,36 @@
+Relatório – Classificação de Tumores de Mama
+Objetivo
+O objetivo foi criar um modelo de classificação para prever se um tumor é benigno ou maligno com base em características dos exames, usando o dataset "Breast Cancer Wisconsin (Diagnostic)" da biblioteca sklearn.datasets.
+
+Etapas Realizadas
+Carregamento dos dados: Dataset carregado via load_breast_cancer(), transformado em DataFrame com as colunas de atributos e o alvo (target).
+Verificação de valores ausentes: Nenhum valor ausente foi encontrado.
+Normalização: Os dados foram normalizados com StandardScaler para melhorar a performance dos modelos.
+Análise exploratória: Foi feito um histograma da variável alvo mostrando que há mais tumores benignos do que malignos.
+Modelos Utilizados
+Dois modelos de classificação foram testados:
+
+Random Forest
+SVM (Support Vector Machine)
+Os dados foram divididos em treino (80%) e teste (20%).
+
+Resultados
+Random Forest
+Acurácia: 96%
+Matriz de confusão:
+Verdadeiros positivos: 70
+Verdadeiros negativos: 40
+Falsos positivos: 3
+Falsos negativos: 1
+F1-score geral: muito bom, especialmente na classe de tumores benignos.
+SVM
+Acurácia: 97%
+Matriz de confusão:
+Verdadeiros positivos: 70
+Verdadeiros negativos: 41
+Falsos positivos: 2
+Falsos negativos: 1
+F1-score um pouco melhor que o Random Forest.
+Conclusão
+Ambos os modelos apresentaram bons resultados. A SVM teve um desempenho levemente melhor, com acurácia de 97% e menos erros. Por isso, ela é a mais indicada nesse caso. Mesmo assim, o Random Forest também é uma ótima opção.
+
